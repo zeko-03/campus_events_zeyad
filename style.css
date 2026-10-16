@@ -47,7 +47,7 @@ body {
     color: var(--text-color);
 }
 
-/* Dark mode using CSS only */
+/* Change the color variables when dark mode is checked. */
 body:has(#dark-mode:checked) {
     --page-bg: #111827;
     --card-bg: #1f2937;
@@ -325,7 +325,7 @@ footer a:hover {
     }
 }
 
-/* Mobile layout */
+/* Use one column and stack navigation links on small screens. */
 @media (max-width: 480px) {
     main .event-grid {
         grid-template-columns: 1fr;
