@@ -1,0 +1,375 @@
+
+:root {
+    --page-bg: #f2f5f9;
+    --card-bg: #ffffff;
+    --text-color: #273444;
+    --heading-color: #2c3e50;
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --border-color: #d2dae4;
+    --input-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#dark-mode {
+    margin: 15px 5px 15px 4%;
+    cursor: pointer;
+}
+
+#dark-mode + label {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dark-mode + label:hover {
+    background-color: var(--accent-color);
+}
+
+.site {
+    min-height: 100vh;
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+/* Dark mode using CSS only */
+body:has(#dark-mode:checked) {
+    --page-bg: #111827;
+    --card-bg: #1f2937;
+    --text-color: #e5e7eb;
+    --heading-color: #bfdbfe;
+    --primary-color: #172b3d;
+    --accent-color: #2563a6;
+    --border-color: #526174;
+    --input-bg: #111827;
+
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+header {
+    padding: 25px 15px;
+    text-align: center;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    color: white;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+header > p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--primary-color);
+}
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+main section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+main h2,
+main h3 {
+    color: var(--heading-color);
+}
+
+main .event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.event-card {
+    padding: 15px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+main > section > img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+.event-grid a,
+main section > a,
+form input[type="submit"],
+form button[type="submit"] {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main .event-card a:hover,
+main section > a:hover,
+form input[type="submit"]:hover,
+form button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+main a:focus,
+nav a:focus,
+footer a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+main ul {
+    width: fit-content;
+    max-width: 100%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+form p {
+    margin: 15px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form input[type="number"],
+form input[type="date"],
+form input[type="time"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 9px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+form input[type="color"] {
+    width: 60px;
+    height: 35px;
+}
+
+form input[type="range"] {
+    width: 100%;
+    max-width: 350px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 6px;
+}
+
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 22px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    margin: 5px 8px;
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Tablet layout */
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+    }
+
+    main .event-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    main .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    main section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    table {
+        min-width: 560px;
+    }
+
+    .event-card img {
+        height: auto;
+    }
+}
+.event-detail {
+    display: none;
+}
+
+body:has(.event-detail:target) .event-detail {
+    display: none;
+}
+
+body:has(#innovation-day:target) #innovation-day,
+body:has(#web-workshop:target) #web-workshop,
+body:has(#clubs-fair:target) #clubs-fair {
+    display: block;
+}
+
+body:not(:has(.event-detail:target)) #innovation-day {
+    display: block;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Campus Events Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="dark-mode">
+    <label for="dark-mode">Dark Mode</label>
+
+    <div class="site">
+
+        <header>
+            <p>Campus Events Guide</p>
+            <h1>Event Details</h1>
+            <p>Find information about each campus event.</p>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="event-details.html">Event Details</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="registration.html">Registration</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="event-card event-detail" id="innovation-day">
+                <h2>Campus Innovation Day</h2>
+
+                <img src="assets/innovation-day.jpg"
+                     alt="Campus Innovation Day">
+
+                <p>
+                    Campus Innovation Day brings students together
+                    to share creative ideas and present their projects.
+                </p>
+
+                <p><strong>Date:</strong> 15 November 2026</p>
+                <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                <p><strong>Venue:</strong> Main Auditorium</p>
+                <p><strong>Entry:</strong> Free, registration required</p>
+
+                <h3>Event Agenda</h3>
+                <ul>
+                    <li>Welcome and introduction</li>
+                    <li>Student project presentations</li>
+                    <li>Innovation and technology activities</li>
+                    <li>Questions and discussion</li>
+                </ul>
+
+                <h3>Event Video</h3>
+                <video controls>
+                    <source src="assets/event-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <p>
+                    <a href="registration.html">Register for this Event</a>
+                </p>
+            </section>
+
+            <section class="event-card event-detail" id="web-workshop">
+                <h2>Web Development Workshop</h2>
+
+                <img src="assets/web-workshop.jpg"
+                     alt="Web Development Workshop">
+
+                <p>
+                    Join the Web Development Workshop to learn how
+                    to create websites using HTML and CSS.
+                </p>
+
+                <p><strong>Date:</strong> 20 November 2026</p>
+                <p><strong>Time:</strong> 11:00 AM - 1:00 PM</p>
+                <p><strong>Venue:</strong> Computer Lab 2</p>
+                <p><strong>Entry:</strong> Free, registration required</p>
+
+                <h3>What You Will Learn</h3>
+                <ul>
+                    <li>Basic HTML elements</li>
+                    <li>Styling web pages with CSS</li>
+                    <li>Building a simple web page</li>
+                </ul>
+
+                <p>
+                    <a href="registration.html">Register for this Event</a>
+                </p>
+            </section>
+
+            <section class="event-card event-detail" id="clubs-fair">
+                <h2>Student Clubs Fair</h2>
+
+                <img src="assets/clubs-fair.jpg"
+                     alt="Student Clubs Fair">
+
+                <p>
+                    Discover student clubs, meet their members,
+                    and learn how to participate in campus activities.
+                </p>
+
+                <p><strong>Date:</strong> 25 November 2026</p>
+                <p><strong>Time:</strong> 12:00 PM - 3:00 PM</p>
+                <p><strong>Venue:</strong> Central Courtyard</p>
+                <p><strong>Entry:</strong> Free, registration required</p>
+
+                <h3>Fair Activities</h3>
+                <ul>
+                    <li>Meet student club members</li>
+                    <li>Explore different university clubs</li>
+                    <li>Learn about club activities</li>
+                </ul>
+
+                <p>
+                    <a href="registration.html">Register for this Event</a>
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>Event Review</h2>
+
+                <p>Share your feedback about Campus Innovation Day.</p>
+
+                <form>
+                    <label for="review-name">Your Name:</label>
+                    <input type="text" id="review-name" name="review-name"
+                        maxlength="50" required>
+
+                    <label for="review-message">Your Review:</label>
+                    <textarea id="review-message" name="review-message"
+                            rows="4" maxlength="500" required></textarea>
+
+                    <label for="review-file">Upload a File:</label>
+                    <input type="file" id="review-file" name="review-file">
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Campus Events Guide</p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
