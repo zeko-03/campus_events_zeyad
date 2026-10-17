@@ -29,7 +29,7 @@ The website is created using HTML and CSS.
 
 ## How to Run
 
-1. Download or clone the repository.
+1. Download or clone the repository: https://github.com/zeko-03/campus_events_zeyad.git.
 2. Open the project folder.
 3. Open `index.html` in Chrome or Microsoft Edge.
 
