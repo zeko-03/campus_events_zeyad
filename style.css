@@ -47,7 +47,6 @@ body {
     color: var(--text-color);
 }
 
-/* Change the color variables when dark mode is checked. */
 body:has(#dark-mode:checked) {
     --page-bg: #111827;
     --card-bg: #1f2937;
@@ -310,7 +309,6 @@ footer a:hover {
     color: var(--accent-color);
 }
 
-/* Tablet layout */
 @media (max-width: 768px) {
     main {
         width: 94%;
@@ -325,7 +323,6 @@ footer a:hover {
     }
 }
 
-/* Use one column and stack navigation links on small screens. */
 @media (max-width: 480px) {
     main .event-grid {
         grid-template-columns: 1fr;
